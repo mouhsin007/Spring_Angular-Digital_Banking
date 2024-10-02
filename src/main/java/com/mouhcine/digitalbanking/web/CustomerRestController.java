@@ -16,7 +16,7 @@ import java.util.List;
 public class CustomerRestController {
     private BankAccountService bankAccountService;
     @GetMapping("/customers")
-    public List<CustomerDTO> customers(){
+    public List<CustomerDTO> listCustomers(){
         return bankAccountService.listCustomers();
     }
     @GetMapping("/customers/search")
